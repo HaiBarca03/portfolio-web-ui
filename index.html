@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hai Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 50px 70px;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: white;
+      color: #764ba2;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #f0f0f0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Hello, I'm Hai 🚀</h1>
+    <p>Software Engineer</p>
+    <a href="#" class="btn">View My Projects</a>
+  </div>
+</body>
+</html>
