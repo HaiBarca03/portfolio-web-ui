@@ -1,0 +1,129 @@
+.support-container {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.support-header h1.ant-typography {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 48px !important;
+  color: var(--text) !important;
+}
+
+.support-header p.ant-typography {
+  font-size: 18px !important;
+  color: var(--text-light) !important;
+}
+
+.services-grid {
+  margin-top: 40px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(56, 182, 255, 0.2) !important;
+  border-radius: 20px !important;
+  padding: 24px !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent) !important;
+  box-shadow: 0 20px 40px rgba(0, 149, 232, 0.1) !important;
+}
+
+.service-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background: var(--sky-deep);
+  color: var(--accent-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.service-title.ant-typography {
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--text) !important;
+  margin-bottom: 16px !important;
+}
+
+.service-desc.ant-typography {
+  color: var(--text-light) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 24px !important;
+  flex-grow: 1;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-light);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.check-icon {
+  color: var(--accent-dark);
+}
+
+.service-btn {
+  background: var(--accent-dark) !important;
+  border-radius: 12px !important;
+  border: none !important;
+  height: 50px !important;
+  font-weight: 600 !important;
+}
+
+.support-cta {
+  margin-top: 100px;
+  text-align: center;
+  padding: 60px;
+  background: rgba(56, 182, 255, 0.1);
+  border-radius: 30px;
+  border: 1px dashed var(--accent);
+}
+
+.support-cta h2.ant-typography {
+  font-family: 'Playfair Display', serif !important;
+  color: var(--text) !important;
+}
+
+.contact-btn {
+  margin-top: 24px !important;
+  border: 1.5px solid var(--accent-dark) !important;
+  color: var(--accent-dark) !important;
+  border-radius: 12px !important;
+  height: 50px !important;
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .support-container {
+    padding: 40px 24px;
+  }
+  .support-cta {
+    padding: 40px 24px;
+  }
+}

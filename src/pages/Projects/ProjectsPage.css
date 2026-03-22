@@ -1,0 +1,175 @@
+.projects-container {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.projects-header h1.ant-typography {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 48px !important;
+  color: var(--text) !important;
+}
+
+.projects-header p.ant-typography {
+  font-size: 18px !important;
+  color: var(--text-light) !important;
+  max-width: 700px;
+  margin: 0 auto !important;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; /* Khoảng cách giữa các dự án */
+}
+
+.project-row-item {
+  width: 100%;
+}
+
+.project-image-container {
+  position: relative;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 149, 232, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.project-row-item:hover .project-image-container {
+  transform: scale(1.02);
+}
+
+.project-display-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-type-tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--accent-dark);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-detail-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-detail-content h2.ant-typography {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 36px !important;
+  color: var(--text) !important;
+  margin-bottom: 20px !important;
+}
+
+.project-tech-tags {
+  margin-bottom: 24px;
+}
+
+.project-long-desc.ant-typography {
+  font-size: 17px !important;
+  color: var(--text-light) !important;
+  line-height: 1.7 !important;
+  margin-bottom: 24px !important;
+}
+
+.project-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.check-icon {
+  color: var(--accent-dark);
+}
+
+.view-live-btn {
+  background: var(--accent-dark) !important;
+  border-radius: 12px !important;
+  border: none !important;
+  height: 50px !important;
+  padding: 0 28px !important;
+  font-weight: 600 !important;
+}
+
+.view-repo-btn {
+  border: 1.5px solid rgba(56, 182, 255, 0.4) !important;
+  color: var(--accent-dark) !important;
+  border-radius: 12px !important;
+  height: 50px !important;
+  padding: 0 28px !important;
+  background: transparent !important;
+  font-weight: 600 !important;
+}
+
+.projects-footer-cta {
+  margin-top: 120px;
+  text-align: center;
+  padding: 80px 40px;
+  background: rgba(0, 149, 232, 0.05);
+  border-radius: 40px;
+  border: 1.5px dashed var(--accent);
+}
+
+.projects-footer-cta h2.ant-typography {
+  font-family: 'Playfair Display', serif !important;
+  color: var(--text) !important;
+}
+
+.cta-btn-final {
+  margin-top: 32px !important;
+  height: 56px !important;
+  background: var(--accent-dark) !important;
+  border-radius: 14px !important;
+  padding: 0 40px !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 992px) {
+  .projects-container {
+    padding: 60px 24px;
+  }
+  .projects-list {
+    gap: 60px;
+  }
+  .project-image-container {
+    height: 300px;
+  }
+  .flex-reverse {
+    flex-direction: row;
+  }
+}
