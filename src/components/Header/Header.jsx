@@ -4,6 +4,7 @@ import './Header.css';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,19 +22,24 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
+    <nav className={`navbar ${isSticky ? 'sticky' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="logo">
-        <NavLink to="/">
+        <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
           <img src="https://res.cloudinary.com/dbzuqtojr/image/upload/v1772511305/avatar-user/avttexxt_dnwmtq.png" alt="Avatar" />
         </NavLink>
       </div>
-      <div className="nav-links">
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
-        <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>Giới thiệu</NavLink>
-        <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')}>Dự án</NavLink>
-        <NavLink to="/blog" className={({ isActive }) => (isActive ? 'active' : '')}>Blog</NavLink>
-        <NavLink to="/support" className={({ isActive }) => (isActive ? 'active' : '')}>Dịch vụ</NavLink>
-        <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>Liên hệ</NavLink>
+
+      <div className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className="hamburger"></div>
+      </div>
+
+      <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+        <NavLink to="/" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
+        <NavLink to="/about" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Giới thiệu</NavLink>
+        <NavLink to="/projects" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Dự án</NavLink>
+        <NavLink to="/blog" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Blog</NavLink>
+        <NavLink to="/support" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Dịch vụ</NavLink>
+        <NavLink to="/contact" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>Liên hệ</NavLink>
       </div>
     </nav>
   );

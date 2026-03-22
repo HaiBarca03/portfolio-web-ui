@@ -155,12 +155,67 @@
   padding: 0 32px !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .contact-container {
-    padding: 100px 16px 60px 16px;
+    padding: 100px 40px 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-header {
+    margin-bottom: 40px;
+  }
+
+  .contact-header h1.ant-typography {
+    font-size: 36px !important;
+  }
+
+  .contact-info-list {
+    margin-bottom: 40px;
   }
 
   .contact-form-wrapper {
-    padding: 32px 20px;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 80px 20px 40px;
+  }
+
+  .contact-header h1.ant-typography {
+    font-size: 32px !important;
+  }
+
+  .contact-header p.ant-typography {
+    font-size: 16px !important;
+  }
+
+  .contact-info-item {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .info-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .contact-form-wrapper {
+    padding: 24px 20px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-header h1.ant-typography {
+    font-size: 28px !important;
+  }
+
+  .submit-btn {
+    height: 50px !important;
+    font-size: 15px !important;
   }
 }

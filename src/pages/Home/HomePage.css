@@ -354,6 +354,7 @@ section {
 .teaser-card:hover {
   transform: scale(1.02);
   background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
 }
 
 .teaser-card .ant-card-meta-title {
@@ -430,10 +431,25 @@ section {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+  section {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 991px) {
   .hero-section {
     min-height: auto;
-    padding: 100px 24px;
+    padding: 120px 24px 60px;
+  }
+
+  .hero-name.ant-typography {
+    font-size: clamp(48px, 12vw, 80px) !important;
+    letter-spacing: -2px !important;
+  }
+
+  .stats-row-wrapper {
+    margin-top: 60px;
   }
 
   .stat-divider {
@@ -441,6 +457,107 @@ section {
   }
 
   .stats-row {
-    flex-direction: column;
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  .about-content {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .about-content h2.ant-typography {
+    font-size: 32px !important;
+  }
+
+  .value-pills {
+    justify-content: center;
+  }
+
+  .tech-card-premium {
+    padding: 20px !important;
+  }
+
+  .final-cta-section {
+    padding: 60px 30px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;
+  }
+
+  .hero-desc.ant-typography {
+    font-size: 17px !important;
+  }
+
+  .hero-visual-deco, .deco-line {
+    display: none;
+  }
+
+  .cta-group {
+    flex-direction: column !important;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch !important;
+  }
+
+  .btn-primary-gradient, .btn-outline-glass {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .stat-num {
+    font-size: 42px !important;
+  }
+
+  .tech-pill-v2 {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+
+  .workflow-item {
+    padding: 30px 15px;
+  }
+
+  .teaser-grid .ant-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-name.ant-typography {
+    font-size: 40px !important;
+    letter-spacing: -1px !important;
+  }
+
+  .hero-role.ant-typography {
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
+  }
+
+  .about-image-card {
+    border-radius: 20px;
+  }
+
+  .about-overlay-text {
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .final-cta-section h2.ant-typography {
+    font-size: 28px !important;
+  }
+  
+  .btn-final-impact {
+    width: 100% !important;
+    font-size: 16px !important;
+    padding: 0 24px !important;
   }
 }
