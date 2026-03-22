@@ -28,7 +28,7 @@ const AppFooter = () => {
           </Col>
         </Row>
         <div className="footer-bottom">
-          <Text type="secondary">© 2026 Hai.dd • Built with React & Ant Design</Text>
+          <Text type="secondary">© 2026 Hai.dd</Text>
         </div>
       </div>
     </footer>
