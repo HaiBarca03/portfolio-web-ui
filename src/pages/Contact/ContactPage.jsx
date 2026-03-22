@@ -78,15 +78,15 @@ const ContactPage = () => {
                 <div className="info-icon"><MailOutlined /></div>
                 <div className="info-text">
                   <Text strong>Email</Text>
-                  <Text type="secondary">contact@haidd.dev</Text>
+                  <Text type="secondary">haidd.contactjob@gmail.com</Text>
                 </div>
               </div>
 
               <div className="contact-info-item">
                 <div className="info-icon"><PhoneOutlined /></div>
                 <div className="info-text">
-                  <Text strong>Số điện thoại</Text>
-                  <Text type="secondary">+84 123 456 789</Text>
+                  <Text strong>Số điện thoại (Zalo)</Text>
+                  <Text type="secondary">+84 394558656</Text>
                 </div>
               </div>
 
@@ -95,8 +95,8 @@ const ContactPage = () => {
                 <div className="info-text">
                   <Text strong>Mạng xã hội</Text>
                   <Space>
-                    <a href="#" className="social-link">LinkedIn</a>
-                    <a href="#" className="social-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/haidev03/" className="social-link">LinkedIn</a>
+                    <a href="https://github.com/HaiBarca03" className="social-link">GitHub</a>
                   </Space>
                 </div>
               </div>
