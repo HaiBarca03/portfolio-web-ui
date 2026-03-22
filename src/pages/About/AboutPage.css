@@ -192,21 +192,92 @@ section {
   font-weight: 600;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .about-page-container {
-    padding-top: 100px;
+    padding: 100px 40px 60px;
   }
+}
 
+@media (max-width: 991px) {
   .about-avatar-wrapper {
-    margin-bottom: 40px;
-  }
-
-  .avatar-hex {
-    width: 260px;
-    height: 260px;
+    margin-bottom: 60px;
   }
 
   .about-name.ant-typography {
-    font-size: 40px !important;
+    font-size: 42px !important;
+    text-align: center;
+  }
+  
+  .role-tag {
+    display: block;
+    margin: 0 auto 16px;
+    width: fit-content;
+  }
+
+  .about-summary {
+    text-align: center;
+    font-size: 17px !important;
+  }
+
+  .quick-stats {
+    justify-content: center;
+  }
+  
+  .section-title.ant-typography {
+    font-size: 32px !important;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-container {
+    padding: 80px 20px 40px;
+  }
+
+  section {
+    margin-bottom: 60px;
+  }
+
+  .avatar-hex {
+    width: 240px;
+    height: 240px;
+  }
+
+  .gpa-badge {
+    right: 15%;
+    padding: 8px 16px;
+  }
+
+  .about-name.ant-typography {
+    font-size: 32px !important;
+  }
+
+  .motivation-card {
+    padding: 30px 20px !important;
+  }
+
+  .personality-card-more {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .avatar-hex {
+    width: 200px;
+    height: 200px;
+  }
+
+  .gpa-badge {
+    right: 10%;
+    bottom: 0;
+  }
+
+  .about-name.ant-typography {
+    font-size: 28px !important;
+  }
+
+  .quick-stat-item {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
