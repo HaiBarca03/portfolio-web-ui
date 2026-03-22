@@ -1,0 +1,212 @@
+.about-page-container {
+  padding: 120px 24px 80px 24px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 0 !important;
+}
+
+.section-title.ant-typography {
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 36px !important;
+}
+
+/* Hero Section */
+.about-hero {
+  padding-top: 40px;
+}
+
+.about-avatar-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-hex {
+  width: 320px;
+  height: 320px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: var(--accent-dark);
+  padding: 8px;
+  transition: all 0.5s ease;
+}
+
+.avatar-hex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.gpa-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 20%;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid var(--accent);
+  z-index: 10;
+}
+
+.role-tag {
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+.about-name.ant-typography {
+  font-size: 52px !important;
+  font-weight: 800 !important;
+  margin-bottom: 24px !important;
+}
+
+.about-name span {
+  color: var(--accent-dark);
+}
+
+.about-summary {
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  color: #475569 !important;
+  margin-bottom: 32px !important;
+}
+
+.quick-stats {
+  margin-top: 32px;
+}
+
+.quick-stat-item h2.ant-typography {
+  margin: 0 !important;
+  color: var(--accent-dark) !important;
+}
+
+/* Education Timeline */
+.timeline-wrapper {
+  padding: 40px 0;
+}
+
+.achievement-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s ease;
+  border: none !important;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 149, 232, 0.1) !important;
+}
+
+.timeline-item {
+  padding-bottom: 40px;
+}
+
+/* Personality Section */
+.personality-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 20px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.trait-icon {
+  font-size: 40px;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.personality-card-more {
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #007bbd 100%);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  height: 100%;
+}
+
+.personality-card-more h3.ant-typography {
+  color: white !important;
+  margin: 0 !important;
+  font-style: italic;
+}
+
+/* Motivation Section */
+.motivation-card {
+  background: white;
+  border-radius: 30px !important;
+  padding: 40px !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05) !important;
+  border: none !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.motivation-card::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: var(--sky);
+  filter: blur(80px);
+  opacity: 0.3;
+}
+
+.quote {
+  font-size: 20px !important;
+  color: var(--accent-dark) !important;
+  margin: 24px 0 !important;
+  font-family: 'Playfair Display', serif !important;
+}
+
+.skill-progress-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.progress-item .progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .about-page-container {
+    padding-top: 100px;
+  }
+
+  .about-avatar-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .avatar-hex {
+    width: 260px;
+    height: 260px;
+  }
+
+  .about-name.ant-typography {
+    font-size: 40px !important;
+  }
+}
