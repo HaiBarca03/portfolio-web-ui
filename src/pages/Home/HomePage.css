@@ -396,6 +396,10 @@ section {
   box-shadow: 0 20px 40px rgba(0, 149, 232, 0.3) !important;
 }
 
+.cta-content {
+  padding: 30px;
+}
+
 /* Scroll Hint Icon */
 .scroll-hint-icon {
   height: 100px;

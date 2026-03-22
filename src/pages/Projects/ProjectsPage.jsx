@@ -1,10 +1,10 @@
 import React from 'react';
 import { Typography, Row, Col, Card, Tag, Button, Space } from 'antd';
 import { motion } from 'framer-motion';
-import { 
-  GithubOutlined, 
-  GlobalOutlined, 
-  RocketOutlined, 
+import {
+  GithubOutlined,
+  GlobalOutlined,
+  RocketOutlined,
   CodeOutlined,
   CheckCircleFilled
 } from '@ant-design/icons';
@@ -19,7 +19,7 @@ const projects = [
     type: "Corporate Website",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
     tech: ["NestJS", "ReactJS", "PostgreSQL", "Tailwind CSS"],
-    description: "Giải pháp website giới thiệu doanh nghiệp chuyên nghiệp, tối ưu SEO và đa ngôn ngữ.",
+    description: "Giải pháp website giới thiệu doanh nghiệp chuyên nghiệp, tối ưu SEO và đa ngôn ngữ cho VietGlobal JSC",
     features: ["Đa ngôn ngữ (i18n)", "Tối ưu hóa SEO & Performance", "Hệ thống quản trị nội dung (CMS)", "Giao diện Responsive"],
     link: "#"
   },
@@ -48,12 +48,13 @@ const projects = [
 const ProjectsPage = () => {
   return (
     <div className="projects-container">
-      <motion.div 
+      <motion.div
         className="projects-header"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <Title level={1}>Sản Phẩm Đã Triển Khai</Title>
+        <Title level={3}>Với sự tin tưởng của khách hàng</Title>
         <Paragraph>Bộ sưu tập các dự án tiêu biểu được xây dựng trên nền tảng NestJS và ReactJS, tập trung vào chất lượng code và trải nghiệm người dùng.</Paragraph>
       </motion.div>
 
@@ -103,7 +104,7 @@ const ProjectsPage = () => {
         ))}
       </div>
 
-      <motion.div 
+      <motion.div
         className="projects-footer-cta"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
