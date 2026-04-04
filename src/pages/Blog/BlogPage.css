@@ -102,12 +102,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card-post-footer .ant-space {
+  flex: 1;
+  min-width: 200px;
 }
 
 .read-more-btn.ant-btn {
   font-weight: 700 !important;
   color: var(--accent-dark) !important;
   font-size: 15px !important;
+}
+
+.view-article-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-view-article-cover {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Sidebar Column */
