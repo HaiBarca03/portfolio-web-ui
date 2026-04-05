@@ -1,6 +1,8 @@
 import React from 'react';
-import { Row, Col, Typography, Space } from 'antd';
+import { Row, Col, Typography, Space, Tooltip } from 'antd';
 import { GithubOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
+import { SiFacebook, SiGmail } from 'react-icons/si';
+import { Icon } from '@iconify/react';
 import './Footer.css';
 
 const { Text, Link } = Typography;
@@ -21,9 +23,21 @@ const AppFooter = () => {
           </Col>
           <Col xs={24} md={12} className="footer-social-col">
             <Space size="large" className="social-icons">
-              <Link href="#" target="_blank"><GithubOutlined /></Link>
-              <Link href="#" target="_blank"><LinkedinOutlined /></Link>
-              <Link href="#" target="_blank"><TwitterOutlined /></Link>
+              <Tooltip title="Github">
+                <Link href="https://github.com" target="_blank"><GithubOutlined /></Link>
+              </Tooltip>
+              <Tooltip title="Linkedin">
+                <Link href="https://www.linkedin.com/in/ddh03/" target="_blank"><LinkedinOutlined /></Link>
+              </Tooltip>
+              <Tooltip title="Facebook">
+                <Link href="https://www.facebook.com/haibarca.823/" target="_blank"><SiFacebook /></Link>
+              </Tooltip>
+              <Tooltip title="Zalo">
+                <Link href="https://zalo.me/0394558656" target="_blank"><Icon icon="simple-icons:zalo" /></Link>
+              </Tooltip>
+              <Tooltip title="Gmail">
+                <Link href="mailto:haidd.contactjob@gmail.com" target="_blank"><SiGmail /></Link>
+              </Tooltip>
             </Space>
           </Col>
         </Row>
